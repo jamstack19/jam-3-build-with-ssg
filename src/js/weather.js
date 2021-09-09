@@ -8,6 +8,8 @@ function success(pos) {
         return response.json();
       })
       .then((data) => {
+
+        console.log("data", data);
   
         document.querySelector('#city').textContent = data.name;
         document.querySelector('#temp').textContent = data.main.temp + "°C";
